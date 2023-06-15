@@ -1,11 +1,6 @@
 describe('Testando',()=>{
     it('Soma de números',()=>{
-       cy.visit('/')
-       cy.get('#inputMatricula').type('2023100')
-       cy.get('#inputSenha').type('senha123')
-       cy.get('body > form > button').click()
-       cy.get('#navbarToggler1 > ul.navbar-nav.mr-auto.mt-2.mt-lg-0 > li:nth-child(5) > a').click()
-       cy.get('body > div > div > div.card-header > a').click()
+       cy.visit('localhost:3000/requerimentos')
        cy.get("#inputDisciplina")
                .select("ADS032 - Construção de Frontend")
        cy.get("#inputProva")
@@ -16,3 +11,4 @@ describe('Testando',()=>{
        cy.get('body > div > div > div.card-body').contains('Pendente')
        })
 })
+ document.querySelector("#inputnatricula")
